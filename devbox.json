@@ -1,0 +1,21 @@
+{
+    "packages": [
+        "elixir",
+        "bash"
+    ],
+    "shell": {
+        "init_hook": [
+            "mkdir -p .nix-mix",
+            "mkdir -p .nix-hex",
+            "export MIX_ENV=prod",
+            "export MIX_HOME=$PWD/.nix-mix",
+            "export HEX_HOME=$PWD/.nix-hex",
+            "export ERL_AFLAGS='-kernel shell_history enabled'",
+            "mix local.hex --force",
+            "mix local.rebar --force",
+        ]
+    },
+    "nixpkgs": {
+        "commit": "89f196fe781c53cb50fef61d3063fa5e8d61b6e5"
+    }
+}

@@ -1,0 +1,7 @@
+.nix-mix/rebar
+.nix-mix/rebar3
+.nix-mix/archives
+islands_engine/.nix-mix
+.vscode/
+.devcontainer/
+.DS_STORE
