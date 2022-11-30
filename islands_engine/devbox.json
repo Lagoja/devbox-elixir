@@ -13,7 +13,11 @@
             "export ERL_AFLAGS='-kernel shell_history enabled'",
             "mix local.hex --force",
             "mix local.rebar --force"
-        ]
+        ],
+        "scripts": {
+            "iex": "iex -S mix",
+            "code": "code ."
+        }
     },
     "nixpkgs": {
         "commit": "89f196fe781c53cb50fef61d3063fa5e8d61b6e5"
